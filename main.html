@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>K8-Webapp</title>
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--<img src="kub_logo.png" width="50" height="50">-->
+        <link rel="icon" href="favicon.ico">
+        <h1 id="heading" style="text-align: center; color: aliceblue; font-size: 250%;">Kubernetes Web-Application</h1>
+    </head>
+    <body>
+        <script type = "text/javascript" src = "main.js"></script>
+        <div class="container">
+                <div class="search-box">
+                    <form>
+                        <!--<buttton type="submit"><i class="fas fa-microphone"></i></buttton>-->
+                        <input type="text" placeholder="Search here..." size="50" id="speech"/>
+                        <i class="fas fa-microphone-alt" id="speechToText" onclick="record()"></i> 
+                      
+                        <!--<buttton type="submit"><i class="fas fa-search"></i></buttton>-->
+                    </form>
+                </div>
+            </div>
+            <div id="pod" style="border: rgb(9, 190, 130) solid 6px; border-radius: 5%;height: 60%;width: 60%;position:absolute;left: 19%;font-family: 'Courier New', Courier, monospace;font-size: 120%;text-align:center;background-color: rgba(18, 226, 233, 0.829);color:azure; top: 27%;">
+                <pre>
+                    <div id="op" style="font-family: 'Courier New', Courier, monospace;font-size: 90%;color: rgb(3, 10, 10);"><i><b><u>Output</u></b></i></div>
+                </pre>
+            </div>
+
+
+            
+               
+                
+           
+           
+
+
+
+    </body>
+  
+</html>

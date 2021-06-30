@@ -1,9 +1,9 @@
 body{
-    background: #085f63;
+    background: #051622;   
 }
 
 .container{
-    top:15%;
+    top:17%;
     left:50%;
     transform: translate(-50%,-50%);
     position: absolute;
@@ -12,7 +12,7 @@ body{
 .search-box{
     border-radius: 50px;
     background: white;
-    border: 5px solid #76b39d;
+    border: 5px solid #FF6864;
 }
 
 form{
@@ -27,9 +27,10 @@ input{
     color: #085f63;
 }
 
+
 i{
     font-size: 25px;
-    margin: 0px 10px;
+    margin: 0px 15px;
     color: #085f63;
 }
 
@@ -40,4 +41,20 @@ i:hover{
 button{
     background: transparent;
     border: none;
+}
+
+#gif{
+    position:fixed; 
+	top:0; 
+	left:0; 
+}
+
+#op{
+    font-size: 30px;
+} 
+
+#boat-gif{
+    position: fixed;
+    top: 30%;
+    opacity: 0.7;
 }

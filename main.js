@@ -1,13 +1,41 @@
+var recognition = new webkitSpeechRecognition();
+//recognition.start();
 function record(){
 
-    var recognition = new webkitSpeechRecognition();
+    //var recognition = new webkitSpeechRecognition();
     recognition.lang = "en-GB";
 
     recognition.onresult = function(event) {
         var result = document.getElementById('speechToText').value = event.results[0][0].transcript;
-       // console.log(result);
+        //alert(result);
+        console.log(result);
+        speech=document.getElementById("speech").value=result;
     }
     recognition.start();
+
+  }
+
+  function go_to_server(){
+    output = document.getElementById("op");
+    
+    speech=document.getElementById("speech");
+    var speech=speech.value;
+    
+    url="http://13.127.139.59/cgi-bin/server.py?speech="+speech;
+ 
+    var xhr=new XMLHttpRequest();
+    xhr.open("GET",url,true);
+    xhr.send();
+    xhr.onload=display_output
+    function display_output(){
+    var output_by_server =xhr.responseText;
+    //alert(output_by_server);
+    output.innerHTML=output_by_server;
+   }
+    
+    
+    
+}
 
 
     /*imgx = document.createElement("img");
@@ -54,7 +82,7 @@ function record(){
                    })()*/
       
                     
-    }
+  
    
     /*function speak(msg){
    

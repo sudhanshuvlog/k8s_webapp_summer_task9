@@ -21,7 +21,7 @@ function record(){
     speech=document.getElementById("speech");
     var speech=speech.value;
     
-    url="http://13.127.139.59/cgi-bin/server.py?speech="+speech;
+    url="http://13.232.188.39/cgi-bin/server.py?speech="+speech;
  
     var xhr=new XMLHttpRequest();
     xhr.open("GET",url,true);

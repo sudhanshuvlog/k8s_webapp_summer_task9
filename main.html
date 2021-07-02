@@ -16,25 +16,36 @@
         <script type = "text/javascript" src = "main.js"></script>
         <div class="container">
                 <div class="search-box">
-                    <form>
-                        <!--<buttton type="submit"><i class="fas fa-microphone"></i></buttton>-->
+                    
+                    <input type="text" placeholder="Search here..." size="50" id="speech"/>
+                    <i class="fas fa-microphone-alt" id="speechToText" onclick="record()"></i> 
+                    <button id="submit" onclick="go_to_server();">Search</button>
+                    
+                    
+                    
+                    
+                    
+                    <!--<buttton type="submit"><i class="fas fa-microphone"></i></buttton>
                         <input type="text" placeholder="Search here..." size="50" id="speech"/>
                         <i class="fas fa-microphone-alt" id="speechToText" onclick="record()"></i>
-                      
+                    -->
                         <!--<buttton type="submit"><i class="fas fa-search"></i></buttton>-->
-                    </form>
+                     
                 </div>
             </div>
+            
             <div id="gif">
-                <img src="kub_ani.gif" class="img-fluid animated" alt="" style="width: 65%;">
+                <img src="kub_ani.gif" class="img-fluid animated" alt="" style="width: 58%;">
             </div>
-            <div id="pod" style="border: #07c4f3 solid 1px; border-radius: 5%;height: 60%;width: 60%;position:absolute;left: 19%;font-family: 'Courier New', Courier, monospace;font-size: 120%;text-align:center;color:azure; top: 27%;">
-                <pre>
-                    <div id="op" style="font-family: 'Courier New', Courier, monospace;color: #150734;"><b><u>output</u></b></div>
-                </pre>
-            </div>
+             
             <div id="boat-gif">
                 <img src="boat_gif.gif" class="img-fluid animated" alt="" height=500px  width="1500px">
+            </div>
+
+            <div id="pod" style="border: #07c4f3 solid 1px; border-radius: 5%;height: 60%;width: 60%;position:absolute;left: 19%;font-family: 'Courier New', Courier, monospace;font-size: 120%;text-align:center;color:azure; top: 27%;">
+                <pre>
+                    <div id="op" style="font-family: 'Courier New', Courier, monospace;"><b><u>OUTPUT</u></b></div>
+                </pre>
             </div>
 
     </body>
